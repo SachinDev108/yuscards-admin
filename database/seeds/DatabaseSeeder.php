@@ -26,6 +26,14 @@ class DatabaseSeeder extends Seeder
         $this->call(PagesTableSeeder::class);
         $this->call(MenuTableSeeder::class);
         $this->call(ModulesTableSeeder::class);
+		//$this->call(UsersTableSeeder::class);
+        $this->call(WalletsTableSeeder::class);
+        $this->call(TransactionsTableSeeder::class);
+        $this->call(PaymentMethodSeeder::class);
+        $this->call(CardsOrderTableSeeder::class);
+        $this->call(ReferralProgramSeeder::class);
+        $this->call(CardTableSeeder::class);
+
 
         Model::reguard();
     }

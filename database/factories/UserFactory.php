@@ -9,6 +9,7 @@ $factory->define(User::class, function (Generator $faker) {
     return [
         'first_name'        => $faker->name,
         'last_name'         => $faker->name,
+		'name' 				=> $faker->name,
         'email'             => $faker->safeEmail,
         'password'          => $password ?: $password = bcrypt('secret'),
         'confirmation_code' => md5(uniqid(mt_rand(), true)),
